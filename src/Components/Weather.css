@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container with decreased opacity for the background image */
+.contt {
+    margin-top: 9.7vh;
+    background-image: url("./backg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    /* Decreased opacity of the background */
+    background-color: rgba(0, 0, 0, 0.5); /* This adds a black overlay to the background */
+}
+
+/* City name and weather condition styling */
+.states {
+    font-size: 3.5vw;
+    font-weight: 700;
+    font-family: "Sedan", serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.2rem;
+}
+
+/* Latitude and Longitude styling */
+.latlong {
+    font-size: 1.5vw;
+    font-family: "Arial", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+/* Weather condition (e.g., Haze) styling */
+.hazyy {
+    font-size: 3.5vw;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+}
+
+/* Temperature styling */
+.temper {
+    font-size: 4vw;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+}
+
+/* Real Feel styling */
+.realfeel {
+    font-size: 2.2vw;
+    font-family: "Kalam", cursive;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+/* Styling for additional weather details like Pressure, Humidity, etc. */
+.rowd {
+    font-size: 1.8vw;
+    font-family: "Verdana", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* Image (e.g., Haze icon) styling */
+.imagee {
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .states {
+        font-size: 5vw;
+    }
+
+    .latlong, .realfeel, .rowd {
+        font-size: 2.8vw;
+    }
+
+    .hazyy, .temper {
+        font-size: 5vw;
+    }
+
+    .imagee {
+        width: 6vw;
+        height: 6vw;
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+    .states {
+        font-size: 6.5vw;
+    }
+
+    .latlong, .realfeel, .rowd {
+        font-size: 3.5vw;
+    }
+
+    .hazyy, .temper {
+        font-size: 6.5vw;
+    }
+
+    .imagee {
+        width: 7vw;
+        height: 7vw;
+    }
+}
